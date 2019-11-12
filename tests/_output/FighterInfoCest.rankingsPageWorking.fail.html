@@ -1,0 +1,42 @@
+<!html doctype>
+<html lang = "en">
+<head>
+    <meta charset = "utf-8">
+    <title>UFC World</title>
+    <style> @import "css/background.css";
+        @import "css/NavBar.css";
+    </style>
+
+
+</head>
+
+<body>
+
+
+
+<h1>Home Page</h1>
+<!-- navigation bar -->
+<ul>
+
+    <li><a href="DisplayRankings.php">Rankings</a></li>
+    <li><a href="DisplayArchive.php">Archive</a></li>
+    <li><a href ="LogoutScreen.php">Logout</a></li>
+</ul>
+
+<form action="DisplaySearchResult.php" method="post">
+    <input type="text" name="search" placeholder="UFC event / Fighter">
+    <input type="submit" name="submit"></input>
+</form>
+
+<p>
+
+</p>
+<h3>
+    Upcoming Fights:
+</h3>
+
+
+<a href="DisplayFightCard.php?id=test">test: test</a> <br>2019-04-20<br><br><a href="DisplayFightCard.php?id=UFC on ESPN 9">UFC on ESPN 9: Cowboy vs. Iaquinta</a> <br>2019-05-04<br><br>
+
+</body>
+</html>

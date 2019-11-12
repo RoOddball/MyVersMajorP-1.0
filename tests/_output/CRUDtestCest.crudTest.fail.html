@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Add Event</title>
+    <style> @import "css/background.css";
+        @import "css/NavBar.css";
+    </style>
+</head>
+
+<body>
+<h1>Add Event</h1>
+
+<ul>
+<li><a href ="AdminTool.php">Admin Tool</a></li>
+</ul>
+
+<form action="AddEvent.php" method="POST" >
+
+    <label for = "NameOfEvent"> Enter the event name:</label>
+    <input type="text" name = "eventName" id = "NameOfEvent" placeholder = "Event name" required>
+
+    <p></p>
+    <label for = "MainEvent"> Enter the main event of the fight card:</label>
+    <input type="text" name = "fight" id = "MainEvent" placeholder = "Main event" required>
+
+    <p></p>
+    <label for = "DateOfEvent"> Enter the date of the event:</label>
+    <input type="text" name = "date" id = "DateOfEvent" placeholder = "yyyy-mm-dd" required>
+    <p></p>
+    <label for = "takenPlace"> Enter if the event has taken place or not:</label>
+    <input type="text" name = "HasTakenPlace" id = "takenPlace" placeholder = "true/false" required>
+
+    <p></p>
+    <input type="submit" id = "submit" value="Add" >
+
+</form>
+
+
+Event already exists!

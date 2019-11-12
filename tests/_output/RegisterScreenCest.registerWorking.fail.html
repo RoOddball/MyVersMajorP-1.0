@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <style> @import "css/background.css";
+    </style>
+</head>
+
+<body>
+<h1>Register</h1>
+
+<form action="RegisterScreen.php" method="POST" >
+
+    <label for = "firstname"> Enter Username:</label>
+    <input type="text" name = "username" id = "firstname" placeholder = "Username" required>
+
+    <label for = "password"> Enter Password:</label>
+    <input type="password" name = "password" id ="password" placeholder = "Password" required>
+    <input type="submit" id = "submit" value="Register" >
+
+</form>
+
+
+
+<br />
+<font size='1'><table class='xdebug-error xe-uncaught-exception' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Fatal error: Uncaught ArgumentCountError: Too few arguments to function User::User(), 0 passed in C:\wamp64\www\Project\public\RegisterScreen.php on line 30 and exactly 2 expected in C:\wamp64\www\Project\src\User.php on line <i>15</i></th></tr>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> ArgumentCountError: Too few arguments to function User::User(), 0 passed in C:\wamp64\www\Project\public\RegisterScreen.php on line 30 and exactly 2 expected in C:\wamp64\www\Project\src\User.php on line <i>15</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0002</td><td bgcolor='#eeeeec' align='right'>399360</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp64\www\Project\public\RegisterScreen.php' bgcolor='#eeeeec'>...\RegisterScreen.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0002</td><td bgcolor='#eeeeec' align='right'>400112</td><td bgcolor='#eeeeec'>User->User(  )</td><td title='C:\wamp64\www\Project\public\RegisterScreen.php' bgcolor='#eeeeec'>...\RegisterScreen.php<b>:</b>30</td></tr>
+</table></font>
