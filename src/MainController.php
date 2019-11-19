@@ -9,6 +9,7 @@ class MainController
     private $user;
     private $databaseHandler;
     private $session;
+    private $fighterNames;
 
    public function __construct(){
         $this->user= new User();
@@ -31,7 +32,20 @@ class MainController
            @$this->session->storeIsAdmin(mysqli_fetch_array($fetch)[0][3]);
            include '../templates/nav.php';
            include '../templates/HomePage.php';
+    
+           // messin
+//           require_once __DIR__.'/Event.php';
+//            $event = new Event();
+//            $event->setEventName('TestEvent');
+//            $event->setFighterBlue(5);
+//            $event->setEventDate('2019-03-03');
+//            $event->setFighterRed(6);
+//            $event->setVenue('whatever');
+//            $event->setResult(5);
+//            $event->setWay('RNC');
+//            $this->databaseHandler->insertObjectIntoTable($event,'event');
 
+           //messin
 
        }else{
 
@@ -58,6 +72,7 @@ class MainController
             @$this->session->storeIsAdmin(mysqli_fetch_array($name)[2]);
             include '../templates/nav.php';
             require_once __DIR__ . '/../templates/HomePage.php';
+          
 
         }else{
 
@@ -81,9 +96,9 @@ class MainController
 
     public function Logout()
     {
-       // Session_destroy();
-        $_SESSION =[];
+        //$_SESSION =[];
         include '../templates/LogoutScreen.php';
+        $_SESSION=[];
     }
     public function about(){
 
@@ -109,25 +124,40 @@ class MainController
     public function searchHome(){
 
        if($this->session->isLoggedIn()) {
-           require_once __DIR__ . '/../templates/nav.php';
-           require_once __DIR__ . '/../templates/HomePage.php';
 
-           $querry = filter_input(INPUT_POST, 'homeSearchLabel');
-           $stats[] = $this->databaseHandler->searchForHomeBar($querry);
 
-           $fields =
-               [0 => "Fighter id:",
-                   1 => "Name:",
-                   2 => "Weight class:",
-                   3 => "Height:",
-                   4 => "Pay pre view rank:",
-                   5 => "Country:",
-                   6 => "Wins:",
-                   7 => "Losses:",
-                   8 => "Draws:"
-               ];
+           $query = filter_input(INPUT_POST, 'homeSearchLabel');
+
+          // $stats[] = $this->databaseHandler->searchForHomeBar($querry);
+
+           $stats = mysqli_fetch_all($this->databaseHandler->searchForEvent($query));
 
            require_once __DIR__ . '/../templates/homeSearchResults.php';
        }
     }
+
+    public function homeBack(){
+
+       if($this->session->isLoggedIn()){
+
+          // include '../templates/nav.php';
+           require_once __DIR__.'/../templates/HomePage.php';
+       }
+    }
+
+    public function fighterStats(){
+
+       if($this->session->isLoggedIn()) {
+
+           $query= $_SESSION['fighter'][$_GET["i"]];
+           var_dump(intval($query[0]));
+
+           $fighterRedStats = mysqli_fetch_all($this->databaseHandler->searchFighterStats(intval($query[0])))[0];
+           $fighterBlueStats= mysqli_fetch_all($this->databaseHandler->searchFighterStats(intval($query[1])))[0];
+
+           require_once __DIR__.'/../templates/testPage.php';
+
+       }
+    }
 }
+

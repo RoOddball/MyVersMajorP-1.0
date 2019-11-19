@@ -17,7 +17,6 @@ public function run()
 
         case 'register':
             require_once __DIR__ . '/../templates/RegisterScreen.php';
-
             break;
 
         case 'login':
@@ -29,7 +28,6 @@ public function run()
             break;
 
         case 'processRegister':
-            //$mainController->Register();
             $mainController->processRegister();
             break;
 
@@ -48,8 +46,15 @@ public function run()
         case 'homeSearch':
             $mainController->searchHome();
             break;
+        case 'home':
+            $mainController->homeBack();
+            break;
+        case 'fighterStats':
+            $mainController->fighterStats();
+            break;
 
         default:
+            session_destroy();
             require_once __DIR__ . '/../templates/FirstScreen.php';
     }
 }

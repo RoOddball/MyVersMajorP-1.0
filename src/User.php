@@ -6,6 +6,19 @@ class User
     private $username;
     private $password;
     private $address;
+    private $accType;
+
+
+    public function getAccType()
+    {
+        return $this->accType;
+    }
+
+
+    public function setAccType($accType)
+    {
+        $this->accType = $accType;
+    }
 
 
     public function getId()
@@ -43,6 +56,12 @@ class User
         $this->address = $address;
     }
 
-
+    public function __toString()
+    {
+        return "$this->username" ." ". "$this->password"." ". "$this->address" ." ". "$this->accType";
+    }
+    public function __toArray(){
+        return [$this->username,$this->password,$this->address,$this->accType];
+    }
 
 }

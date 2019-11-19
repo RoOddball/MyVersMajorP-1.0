@@ -24,29 +24,58 @@ class DatabaseHandler
       return $search;
     }
 
-    public function searchForHomeBar($querry){
+    public function searchForEvent($query){
 
         $conn = $this->databaseSpecs->getConn();
-        $rawSearch[] =  mysqli_query($conn,"select * from fighter where fighterName LIKE CONCAT('%','$querry','%')");
-        //var_dump(mysqli_fetch_array($rawSearch[0])[1]);
+        $fighterSearch =  mysqli_query($conn,"select id from fighter where fighterName LIKE CONCAT('%','$query','%')");
+        $fighterId=mysqli_fetch_array($fighterSearch);
+        $eventSearchResult = mysqli_query($conn,"select eventName,venue,fighterRed,fighterBlue,eventDate,result,way from event where fighterRed=$fighterId[0] or fighterBlue=$fighterId[0]");
 
-    //    if(isEmpty($search)){
-//
- //           $search [] = mysqli_query($conn,"select event.eventName, event.venue, fighter.fighterName from '.'
-//event inner join fighter on event.fighterRed = fighter.id ") .
-//                mysqli_query($conn," select fighter.fighterName,event.eventDate,event.result,event.way '.'
- //from event inner join fighter  on event.fighterBlue = fighter.id ");
- //       }
-        $search = [];
+        return $eventSearchResult;
+    }
 
-        foreach($rawSearch[0] as $res):
+    public function insertObjectIntoTable($object,$table ){
 
-            foreach($res as $re):
-            array_push($search,$re);
-            //var_dump($re);
+        $conn = $this->databaseSpecs->getConn();
+        $result = mysqli_query($conn,"select * from ".$table." where id = 1");
+        $columns = mysqli_fetch_array($result);
+        $keys = array_keys($columns);
+        array_unique(array_unique($keys));
+        $values = $object->__toArray();
+
+        $j=0;
+        $i=0;
+        //$id=0;
+
+        foreach($keys as $key):
+
+            if($j>2 && $j%2>0) {
+
+                if($j==3) {
+
+                    mysqli_query($conn, "insert into " . $table . "( " . $key . ") values('$values[$i]')");
+                    $id=mysqli_query($conn,"select id from ".$table." where ".$key." like '$values[$i]'" );
+                    $i++;
+                }else{
+
+                    $id=mysqli_query($conn,"select id from ".$table." where ".$keys[3]." like '$values[0]'" );
+                    //mysqli_query($conn,"update ".$table." set ".$key." ='$values[$i]' where id=".mysqli_fetch_array($id)[0]);
+                   // mysqli_query($conn,"update ".$table." set ".$key." =coalesce(".$key.",'$values[$i]' where id=".mysqli_fetch_array($id)[0]);
+                      mysqli_query($conn,"update ".$table." set  ".$key."=coalesce(".$key.",'$values[$i]') where id=".mysqli_fetch_array($id)[0]);
+                    $i++;
+                }
+            }
+            print'<br>';
+            $j++;
             endforeach;
-        endforeach;
 
-        return $search;
+
+    }
+
+    public function searchFighterStats($fighterId){
+
+        $conn = $this->databaseSpecs->getConn();
+        $result = mysqli_query($conn,"select fighterName,weight,height,p4vRank,nationality,win,loss,draw,dateOfBirth from fighter where id=$fighterId");
+        return $result;
     }
 }

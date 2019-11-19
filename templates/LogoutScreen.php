@@ -11,8 +11,7 @@
 
 <body>
 <ul>
-
-    <li><a href="index.php?">First Screen</a></li>
+    <li><a href="index.php">First Screen</a></li>
 </ul>
 
 

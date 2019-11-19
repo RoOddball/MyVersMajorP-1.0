@@ -3,6 +3,10 @@
 
 class SessionManager
 {
+    public function initiateFighter(){
+        $_SESSION['fighter']=[];
+    }
+
     public function isLoggedIn()
     {
         if (isset($_SESSION['username'])) {
@@ -41,5 +45,21 @@ class SessionManager
             return false;
         }
 
+    }
+
+    public function setFightersNames($fighterRed,$fighterBlue){
+
+        array_push($_SESSION['fighter'],$fighterRed);
+        array_push($_SESSION['fighter'],$fighterBlue);
+    }
+
+    public function getFighterNames(){
+
+        return $_SESSION['fighter'];
+    }
+
+    public function popFighterStack(){
+
+        array_pop($_SESSION);
     }
 }

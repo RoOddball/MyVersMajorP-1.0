@@ -5,7 +5,7 @@
 
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=2">
+    <meta name="viewport" content="width=device-width, initial-scale=4">
     <meta charset = "utf-8">
     <script
             src="https://code.jquery.com/jquery-3.3.1.js"
@@ -61,7 +61,6 @@
 
 </head>
 
-<>
 
 <div id="mySidepanel" class="sidepanel">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
