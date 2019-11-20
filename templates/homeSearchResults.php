@@ -19,7 +19,7 @@
 $i=0;
 $_SESSION['fighter']= [];
 foreach ($stats as $stat):
-    $nameFighterOne=mysqli_fetch_all($this->databaseHandler->searchFighterStats($stat[5]))[0][0];
+    $nameFighterOne=mysqli_fetch_all($this->databaseHandler->searchFighterStats($stat[2]))[0][0];
     $nameFighterTwo=mysqli_fetch_all($this->databaseHandler->searchFighterStats($stat[3]))[0][0];
     array_push($_SESSION['fighter'],[0 =>$stat[2],1 =>$stat[3]]);
 ?>
@@ -44,7 +44,7 @@ foreach ($stats as $stat):
     <!-->
 <?php
 
-    @$searchElement = str_replace(' ', '-', $nameFighterOne);//."-".str_replace(' ','-',$nameFighterTwo);
+    @$searchElement = explode(" ",$nameFighterOne)[1]."-".explode(" ",$nameFighterTwo)[1];
     $result = file_get_contents('https://gnews.io/api/v3/search?q='.$searchElement.'&token=d5f1a0058a3f693557a503d7f32a5da7');
 
     print PHP_EOL .'<br>';
