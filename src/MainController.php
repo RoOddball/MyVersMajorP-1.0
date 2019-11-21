@@ -34,14 +34,14 @@ class MainController
            include '../templates/HomePage.php';
     
            // messin
-//           require_once __DIR__.'/Event.php';
+           require_once __DIR__.'/Event.php';
 //            $event = new Event();
-//            $event->setEventName('TestEvent');
+//            $event->setEventName('TestEvent2');
 //            $event->setFighterBlue(5);
-//            $event->setEventDate('2019-03-03');
+//            $event->setEventDate('2019-03-04');
 //            $event->setFighterRed(6);
 //            $event->setVenue('whatever');
-//            $event->setResult(5);
+//            $event->setResult(7);
 //            $event->setWay('RNC');
 //            $this->databaseHandler->insertObjectIntoTable($event,'event');
 

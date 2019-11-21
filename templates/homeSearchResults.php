@@ -21,10 +21,11 @@ $_SESSION['fighter']= [];
 foreach ($stats as $stat):
     $nameFighterOne=mysqli_fetch_all($this->databaseHandler->searchFighterStats($stat[2]))[0][0];
     $nameFighterTwo=mysqli_fetch_all($this->databaseHandler->searchFighterStats($stat[3]))[0][0];
+    $nameFighterWin=mysqli_fetch_all($this->databaseHandler->searchFighterStats($stat[5]))[0][0];
     array_push($_SESSION['fighter'],[0 =>$stat[2],1 =>$stat[3]]);
 ?>
 <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
-        <h4>Event: <?=$stat[0]?> Venue: <?=$stat[1]?> -- <?=$nameFighterOne?> vs <?=$nameFighterTwo?> -- on <?=$stat[4]?> result <?=$nameFighterOne?> by way of <?=$stat[6]?></h4>
+        <h4>Event: <?=$stat[0]?> Venue: <?=$stat[1]?> -- <?=$nameFighterOne?> vs <?=$nameFighterTwo?> -- on <?=$stat[4]?> result <?=$nameFighterWin?> by way of <?=$stat[6]?></h4>
   <!--      
     <form action="index.php" method="POST" >
         <input type="hidden" name="action" value="fighterStats">
