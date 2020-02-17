@@ -1,17 +1,10 @@
-<hr>
-<header style="background-color:#ACDFF6; color=#5d6163">
-<?php
-require_once __DIR__.'/../src/SessionManager.php';
-$sessionManager = new SessionManager();
-$isLoggedin = $sessionManager->isLoggedIn();
 
-if($isLoggedin){
-    print 'you are logged in as: ' . $sessionManager->usernameFromSession();
-    print '<br><a href="index.php?action=logout">logout</a>';
-} else {
+<header style="background: rgba(30, 155, 140, 0.2)">
 
-    print '<a href="index.php">welcome page</a> <br> <a href="index.php?action=login">login</a>';
-}
+    <div align="right">you are logged in as <b><?="$nickName"?></b> <a href="index.php?action=logout">logout  </a>&nbsp</div>
 
-?>
+
+    <hr>
+</header>
+
 

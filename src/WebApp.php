@@ -46,16 +46,18 @@ public function run()
         case 'homeSearch':
             $mainController->searchHome();
             break;
+
         case 'home':
             $mainController->homeBack();
             break;
+
         case 'fighterStats':
             $mainController->fighterStats();
             break;
 
         default:
-            session_destroy();
-            require_once __DIR__ . '/../templates/FirstScreen.php';
+            $mainController->firstScreen();
+            $_SESSION=[];
     }
 }
 }

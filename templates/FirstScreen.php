@@ -5,38 +5,47 @@
 
 
 <head>
+    <!--
     <meta name="viewport" content="width=device-width, initial-scale=4">
     <meta charset = "utf-8">
     <script
             src="https://code.jquery.com/jquery-3.3.1.js"
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
             crossorigin="anonymous"></script>
+            -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
     <title>UFC World</title>
-    <style> @import "css/background.css";
+    <style>
         body {
             font-family: "Lato", sans-serif;
+            background-color: rgba(0, 70, 100, .2);
         }
 
         .sidepanel  {
             width: 0;
             position: fixed;
             z-index: 1;
-            height: 250px;
             top: 0;
             left: 0;
-            background-color: #a2ff4f;
+            background-color: rgba(10,40,30,.7);
             overflow-x:  hidden;
             transition: 0.5s;
-            padding-top: 60px;
+
         }
 
         .sidepanel a {
-            padding: 8px 8px 8px 32px;
             text-decoration: none;
             font-size: 25px;
-            color: #818181;
+            color: #f1f1f1;
             display: block;
             transition: 0.3s;
+            alignment: center;
         }
 
         .sidepanel a:hover {
@@ -44,16 +53,19 @@
         }
 
         .openbtn{
+            horiz-align: center;
             color: maroon;
-            background-color: rgba(218, 144, 99, 0.33);
-
-            height: 100px;
-            no border;
+            background-color: rgba(0, 90, 200, .4);
+            border: none;
+            width: 30%;
+            border-radius: 20px;
         }
 
         .openbtn:hover {
-            background-color: #ffdcb1;
-
+            background-color: rgba(100,100,100,1);
+        }
+        .closebtn{
+            display: none;
         }
 
     </style>
@@ -61,28 +73,89 @@
 
 </head>
 
-
+<body>
 <div id="mySidepanel" class="sidepanel">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-    <a href="index.php?action=about">About</a>
-    <a href="index.php?action=register">Register</a>
-    <a href="index.php?action=login">Login</a>
-    <a href="index.php?action=contact">Contact</a>
+
+
+    <p align="center" >
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal" style="width: 100%">
+        login
+        </button>
+    </p>
+
+    <p align="center">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registerModal" style="width: 100%">
+        register
+       </button>
+    </p>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="alignment: center"><p align="center">nvm</p></a>
 </div>
 
+<div class="panel" align="center" style="background-color: rgba(0,0,0,.3)">
+<button class="openbtn" onclick="openNav()" ><p style="font-size: 300%">MMAhub</p></button>
+</div>
 
-<button class="openbtn" onclick="openNav()">☰ Toggle Sidepanel</button>
-
-<h1>MMAhub</h1>
-<!-- navigation bar -->
-
-<h2><li><a href="index.php?action=register">Register</a></li></h2>
-  <h2><li><a href="LoginScreen.html">Login</a></li></h2>
+<img src='MajorLogo.jpg' alt="">
 
 
-</body>
 
-</html>
+<div class="container" >
+
+    <!-- The Modal -->
+    <div class="modal fade" id="loginModal">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content" style="background-color: rgba(200,230,220,1)">
+
+                <form action="index.php" method="POST" >
+                    <input type="hidden" name="action" value="processLogin">
+
+                    <label for = "username"> Enter Username:</label>
+                    <input type="text"  name = "username" id = "username" placeholder = "    Username" required style="border-radius: 15px">
+
+                    <label for = "password"> Enter Password:</label>
+                    <input type="password" name = "password" id ="password" placeholder = "    Password" required style="border-radius: 15px">
+                    <input type="submit" name="loginBut" style="border-radius: 10px; background-color: dodgerblue; border-color: red">
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="container">
+
+    <!-- The Modal -->
+    <div class="modal fade" id="registerModal">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content" style="background-color: rgba(200,210,250,1)">
+
+                <form action="index.php" method="POST" >
+
+                    <input  type="hidden" name="action" value="processRegister">
+
+
+                    <label for = "username"> Enter Username:</label>
+                    <input type="text" name = "username" id = "username" placeholder = "   Username" required style="border-radius: 15px">
+
+                    <label for = "password"> Enter Password:</label>
+                    <input type="password" name = "password" id ="password" placeholder = "   Password" required style="border-radius: 15px">
+
+                    <label for = "address"><p> Enter Email address:</p></label>
+                    <input type="text" name = "address" id = "address" placeholder = "   Address" required style="border-radius: 15px">
+
+                    <input type="submit" name = "registerBut" style="border-radius: 10px; background-color: dodgerblue; border-color: red" >
+
+
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+</div>
 
 <script>
     function openNav() {
@@ -93,3 +166,7 @@
         document.getElementById("mySidepanel").style.width = "0";
     }
 </script>
+
+</body>
+
+</html>

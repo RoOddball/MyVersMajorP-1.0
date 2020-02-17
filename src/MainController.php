@@ -19,6 +19,7 @@ class MainController
 
     public function processLogin(){
 
+
         $username = filter_input(INPUT_POST, 'username');
         $password = filter_input(INPUT_POST, 'password');
 
@@ -30,7 +31,8 @@ class MainController
            $this->session->isLoggedIn();
            $this->session->storeUsername($username);
            @$this->session->storeIsAdmin(mysqli_fetch_array($fetch)[0][3]);
-           include '../templates/nav.php';
+           $nickName = $this->session->usernameFromSession();
+           //include '../templates/nav.php';
            include '../templates/HomePage.php';
     
            // messin
@@ -96,7 +98,7 @@ class MainController
 
     public function Logout()
     {
-        //$_SESSION =[];
+
         include '../templates/LogoutScreen.php';
         $_SESSION=[];
     }
@@ -115,13 +117,15 @@ class MainController
 
        if($this->session->isLoggedIn()){
 
-           include '../templates/nav.php';
+           //include '../templates/nav.php';
            require_once __DIR__.'/../templates/HomePage.php';
 
        }
     }
 
     public function searchHome(){
+
+        $nickName = $this->session->usernameFromSession();
 
        if($this->session->isLoggedIn()) {
 
@@ -138,19 +142,22 @@ class MainController
 
     public function homeBack(){
 
+       $nickName = $this->session->usernameFromSession();
+
        if($this->session->isLoggedIn()){
 
-          // include '../templates/nav.php';
            require_once __DIR__.'/../templates/HomePage.php';
        }
     }
 
     public function fighterStats(){
 
+        $nickName = $this->session->usernameFromSession();
+
        if($this->session->isLoggedIn()) {
 
            $query= $_SESSION['fighter'][$_GET["i"]];
-           var_dump(intval($query[0]));
+
 
            $fighterRedStats = mysqli_fetch_all($this->databaseHandler->searchFighterStats(intval($query[0])))[0];
            $fighterBlueStats= mysqli_fetch_all($this->databaseHandler->searchFighterStats(intval($query[1])))[0];
@@ -158,6 +165,13 @@ class MainController
            require_once __DIR__.'/../templates/testPage.php';
 
        }
+    }
+
+    public function firstScreen(){
+
+       require_once __DIR__. '/../templates/FirstScreen.php';
+       $this->session = [];
+
     }
 }
 
