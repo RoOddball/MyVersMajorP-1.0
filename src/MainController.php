@@ -2,6 +2,7 @@
 include 'User.php';
 require_once  'DatabaseHandler.php';
 require_once  'SessionManager.php';
+require_once  'PingPongBall.php';
 
 class MainController
 {
@@ -129,10 +130,9 @@ class MainController
 
        if($this->session->isLoggedIn()) {
 
-
            $query = filter_input(INPUT_POST, 'homeSearchLabel');
 
-          // $stats[] = $this->databaseHandler->searchForHomeBar($querry);
+           $this->session->setQuery($query);
 
            $stats = mysqli_fetch_all($this->databaseHandler->searchForEvent($query));
 
@@ -156,14 +156,13 @@ class MainController
 
        if($this->session->isLoggedIn()) {
 
+           $searchQuery = $this->session->getQuery();
            $query= $_SESSION['fighter'][$_GET["i"]];
-
 
            $fighterRedStats = mysqli_fetch_all($this->databaseHandler->searchFighterStats(intval($query[0])))[0];
            $fighterBlueStats= mysqli_fetch_all($this->databaseHandler->searchFighterStats(intval($query[1])))[0];
 
            require_once __DIR__.'/../templates/testPage.php';
-
        }
     }
 

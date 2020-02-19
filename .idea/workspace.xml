@@ -2,14 +2,77 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56a13cae-afc5-4391-97b5-253579a96692" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/PingPongBall.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ProjectMod.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ProjectMod.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebApp.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApp.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/FirstScreen.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/FirstScreen.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/HomePage.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/HomePage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SessionManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/SessionManager.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/homeSearchResults.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/homeSearchResults.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/nav.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/testPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/testPage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Client.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Client.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/ClientInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/ClientInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Cookie/CookieJar.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Cookie/CookieJar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Cookie/CookieJarInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Cookie/CookieJarInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Cookie/FileCookieJar.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Cookie/FileCookieJar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Cookie/SessionCookieJar.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Cookie/SessionCookieJar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Cookie/SetCookie.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Cookie/SetCookie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/ClientException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/ClientException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/GuzzleException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/GuzzleException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/ServerException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/ServerException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/TooManyRedirectsException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/TooManyRedirectsException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/TransferException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/TransferException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/CurlMultiHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/CurlMultiHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/MockHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/MockHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/HandlerStack.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/HandlerStack.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/MessageFormatter.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/MessageFormatter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Middleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Middleware.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Pool.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Pool.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/PrepareBodyMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/PrepareBodyMiddleware.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/RedirectMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/RedirectMiddleware.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/RequestOptions.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/RequestOptions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/RetryMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/RetryMiddleware.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/TransferStats.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/TransferStats.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/LimitStream.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/LimitStream.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/MessageTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/MessageTrait.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/Request.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/Request.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/Response.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/Response.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/ServerRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/ServerRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/Stream.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/Stream.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/Uri.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/Uri.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/LoggerInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/LoggerInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/LoggerTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/LoggerTrait.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/NullLogger.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/NullLogger.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/Test/LoggerInterfaceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/Test/LoggerInterfaceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/Test/TestLogger.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/Test/TestLogger.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/psr/log/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/psr/log/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/psr/log/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/psr/log/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/ralouphie/getallheaders/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/ralouphie/getallheaders/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/ralouphie/getallheaders/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/ralouphie/getallheaders/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/ralouphie/getallheaders/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/ralouphie/getallheaders/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/ralouphie/getallheaders/phpunit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/ralouphie/getallheaders/tests/GetAllHeadersTest.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,70 +86,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/FirstScreen.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="115" column="95" selection-start-line="115" selection-start-column="95" selection-end-line="115" selection-end-column="95" />
-              <folding>
-                <element signature="n#style#0;n#button#0;n#p#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#button#0;n#div#1;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/RegisterScreen.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="19" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WebApp.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="573">
+            <state relative-caret-position="748">
               <caret line="44" selection-start-line="44" selection-end-line="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/HomePage.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="61" column="12" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/homeSearchResults.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="46" column="12" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -94,55 +97,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/testPage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="22" column="166" selection-start-line="22" selection-start-column="166" selection-end-line="22" selection-end-column="166" />
+            <state relative-caret-position="544">
+              <caret line="65" column="22" lean-forward="true" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
               <folding>
-                <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#1;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ul#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#0;n#ul#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#li#0;n#ul#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ul#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#0;n#ul#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#1;n#ul#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#1;n#ul#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#0;n#ul#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#1;n#ul#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#ul#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#1;n#ul#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#0;n#ul#0;n#div#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#1;n#ul#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#1;n#ul#0;n#div#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#0;n#ul#0;n#div#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#1;n#ul#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#1;n#ul#0;n#div#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#12;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#0;n#ul#0;n#div#12;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#1;n#ul#0;n#div#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#1;n#ul#0;n#div#12;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#0;n#ul#0;n#div#14;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#1;n#ul#0;n#div#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#1;n#ul#0;n#div#14;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#0;n#ul#0;n#div#16;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#1;n#ul#0;n#div#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#1;n#ul#0;n#div#16;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MainController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2618">
-              <caret line="154" column="8" selection-start-line="154" selection-start-column="8" selection-end-line="154" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -150,8 +110,40 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/nav.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="37" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
+            <state relative-caret-position="102">
+              <caret line="6" column="58" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="58" />
+              <folding>
+                <element signature="n#style#0;n#header#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#a#0;n#p#0;n#li#0;n#ul#0;n#div#0;n#header#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#header#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/HomePage.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-17">
+              <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/homeSearchResults.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="50" column="32" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -159,8 +151,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SessionManager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+            <state relative-caret-position="641">
+              <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MainController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="862">
+              <caret line="164" column="61" selection-start-line="164" selection-start-column="61" selection-end-line="164" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PingPongBall.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Event.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -189,7 +208,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tests/unit/UserTest.php" />
         <option value="$PROJECT_DIR$/tests/acceptance/CRUDtestCest.php" />
         <option value="$PROJECT_DIR$/tests/acceptance/FighterInfoCest.php" />
         <option value="$PROJECT_DIR$/tests/acceptance/FightCardCest.php" />
@@ -222,23 +240,24 @@
         <option value="$PROJECT_DIR$/templates/RegisterScreen.php" />
         <option value="$PROJECT_DIR$/src/DatabaseSpecs.php" />
         <option value="$PROJECT_DIR$/templates/homeSearchResults.html" />
-        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/src/User.php" />
         <option value="$PROJECT_DIR$/src/Fighter.php" />
         <option value="$PROJECT_DIR$/src/FightCard.php" />
         <option value="$PROJECT_DIR$/src/Event.php" />
         <option value="$PROJECT_DIR$/templates/testPage.js" />
         <option value="$PROJECT_DIR$/templates/testPage.html" />
-        <option value="$PROJECT_DIR$/src/SessionManager.php" />
         <option value="$PROJECT_DIR$/src/DatabaseHandler.php" />
         <option value="$PROJECT_DIR$/public/index.php" />
         <option value="$PROJECT_DIR$/src/WebApp.php" />
         <option value="$PROJECT_DIR$/templates/LogoutScreen.php" />
-        <option value="$PROJECT_DIR$/src/MainController.php" />
-        <option value="$PROJECT_DIR$/templates/homeSearchResults.php" />
         <option value="$PROJECT_DIR$/templates/HomePage.php" />
-        <option value="$PROJECT_DIR$/templates/nav.php" />
         <option value="$PROJECT_DIR$/templates/FirstScreen.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/src/Query.php" />
+        <option value="$PROJECT_DIR$/src/SessionManager.php" />
+        <option value="$PROJECT_DIR$/src/MainController.php" />
+        <option value="$PROJECT_DIR$/templates/nav.php" />
+        <option value="$PROJECT_DIR$/templates/homeSearchResults.php" />
         <option value="$PROJECT_DIR$/templates/testPage.php" />
       </list>
     </option>
@@ -292,11 +311,18 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
       <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/google/apiclient-services" />
+      <path value="$PROJECT_DIR$/vendor/phpseclib/phpseclib" />
+      <path value="$PROJECT_DIR$/vendor/firebase/php-jwt" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/google/auth" />
+      <path value="$PROJECT_DIR$/vendor/google/apiclient" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="215" />
-    <option name="y" value="-15" />
+    <option name="x" value="783" />
+    <option name="y" value="-14" />
     <option name="width" value="945" />
     <option name="height" value="1050" />
   </component>
@@ -306,18 +332,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="ProjectMod" type="b2602c69:ProjectViewProjectNode" />
               <item name="Mine 3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjectMod" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mine 3" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ProjectMod" type="b2602c69:ProjectViewProjectNode" />
@@ -329,10 +349,46 @@
               <item name="Mine 3" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ProjectMod" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mine 3" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectMod" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mine 3" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="google" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectMod" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mine 3" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="google" type="462c0819:PsiDirectoryNode" />
+              <item name="apiclient" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectMod" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mine 3" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="google" type="462c0819:PsiDirectoryNode" />
+              <item name="apiclient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectMod" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mine 3" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="google" type="462c0819:PsiDirectoryNode" />
+              <item name="apiclient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Google" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -353,6 +409,7 @@
       <recent name="C:\Users\tarab\Desktop\Project\public" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\docs\TUDublinYr3\MajorProject\Mine 3\templates" />
       <recent name="C:\Users\tarab\Desktop\ProjectMod\templates" />
     </key>
   </component>
@@ -583,11 +640,14 @@
       <workItem from="1581778977630" duration="7828000" />
       <workItem from="1581957119409" duration="6364000" />
       <workItem from="1581963941331" duration="10447000" />
+      <workItem from="1581981371284" duration="243000" />
+      <workItem from="1582051110135" duration="10704000" />
+      <workItem from="1582105473080" duration="18047000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="427920000" />
+    <option name="totallyTimeSpent" value="456914000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -601,12 +661,12 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25838926" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18993288" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="0" weight="0.3289689" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.32890365" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.3286119" />
       <window_info anchor="bottom" id="Run" order="3" weight="0.32784638" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
@@ -615,8 +675,8 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.3286119" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50067115" side_tool="true" weight="0.32732317" />
-      <window_info anchor="bottom" x="221" y="580" width="839" height="207" id="Terminal" order="12" side_tool="true" type="WINDOWED" visible="true" weight="0.32405892" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50067115" side_tool="true" weight="0.32719547" />
+      <window_info anchor="bottom" x="479" y="147" width="578" height="530" id="Terminal" order="12" side_tool="true" type="WINDOWED" visible="true" weight="0.32405892" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -649,18 +709,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/DeleteEvent.php" />
-    <entry file="file://$PROJECT_DIR$/public/EditEvent.php" />
-    <entry file="file://$PROJECT_DIR$/tests/acceptance/CRUDtestCest.php" />
-    <entry file="file://$PROJECT_DIR$/codeception.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/DisplayFightCard.php" />
-    <entry file="file://$PROJECT_DIR$/public/DisplayFighterInfo.php" />
     <entry file="file://$PROJECT_DIR$/public/DisplaySearchResult.php" />
     <entry file="file://$PROJECT_DIR$/public/DisplayRankings.php" />
     <entry file="file://$PROJECT_DIR$/public/DisplayArchive.php" />
@@ -727,13 +775,6 @@
     <entry file="file://$PROJECT_DIR$/vendor/composer/installed.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/FightCard.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1037">
@@ -745,13 +786,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1054">
           <caret line="62" column="32" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Event.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -795,36 +829,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/homeSearchResults.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" column="12" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SessionManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/MajorLogo.jpg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/nav.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="37" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/LoginScreen.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -840,20 +846,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2618">
-          <caret line="154" column="8" selection-start-line="154" selection-start-column="8" selection-end-line="154" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WebApp.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/RegisterScreen.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -861,76 +853,114 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/HomePage.php">
+    <entry file="file://$PROJECT_DIR$/public/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="61" column="12" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="17" />
+        <state relative-caret-position="17">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/google/apiclient/src/Google/Client.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="905" lean-forward="true" selection-start-line="905" selection-end-line="905" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/FirstScreen.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
+        <state relative-caret-position="1955">
           <caret line="115" column="95" selection-start-line="115" selection-start-column="95" selection-end-line="115" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebApp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/client_secret.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/client_secret_817225032112-g97rpammgshn939b32to775u9dlsm2sn.apps.googleusercontent.com.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_search-videos-by-keyword-using-php-youtube-data-api-v3.zip/search-videos-by-keyword-using-php-youtube-data-api-v3/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PingPongBall.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SessionManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="641">
+          <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="862">
+          <caret line="164" column="61" selection-start-line="164" selection-start-column="61" selection-end-line="164" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/nav.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="58" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="58" />
           <folding>
-            <element signature="n#style#0;n#button#0;n#p#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#button#0;n#div#1;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#header#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#a#0;n#p#0;n#li#0;n#ul#0;n#div#0;n#header#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#header#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/HomePage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/homeSearchResults.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="50" column="32" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/testPage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="166" selection-start-line="22" selection-start-column="166" selection-end-line="22" selection-end-column="166" />
+        <state relative-caret-position="544">
+          <caret line="65" column="22" lean-forward="true" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
           <folding>
-            <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#1;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#ul#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#li#0;n#ul#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#ul#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#1;n#ul#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#1;n#ul#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#ul#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#1;n#ul#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ul#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#1;n#ul#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#ul#0;n#div#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#1;n#ul#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#1;n#ul#0;n#div#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#ul#0;n#div#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#1;n#ul#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#1;n#ul#0;n#div#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#12;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#ul#0;n#div#12;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#1;n#ul#0;n#div#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#1;n#ul#0;n#div#12;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#ul#0;n#div#14;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#1;n#ul#0;n#div#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#1;n#ul#0;n#div#14;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#ul#0;n#div#16;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#1;n#ul#0;n#div#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#1;n#ul#0;n#div#16;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

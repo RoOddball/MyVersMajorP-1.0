@@ -49,7 +49,6 @@
 </head>
 <body style="background-color: rgba(230,217,230,0.3)">
 <div data-role="page" id="main">
-    <p><a href="index.php?action=home" class="previous"><button style="border: none;background-color: darkgrey;border-radius: 20px">&laquo; back home</button></a></p>
 
 <?php
 $i=0;

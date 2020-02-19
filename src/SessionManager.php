@@ -62,4 +62,14 @@ class SessionManager
 
         array_pop($_SESSION);
     }
+
+    public function setQuery($searchQuery){
+
+        $_SESSION['searchQuery'] = $searchQuery;
+    }
+
+    public function getQuery(){
+
+        return $_SESSION['searchQuery'];
+    }
 }

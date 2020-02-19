@@ -4,6 +4,6 @@
         "ext-mysqli": "*",
         "ext-curl": "*",
         "ext-json": "*",
-        "ext-http": "*"
+        "google/apiclient": "~2.0"
     }
 }

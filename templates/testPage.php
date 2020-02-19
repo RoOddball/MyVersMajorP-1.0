@@ -1,6 +1,6 @@
 <?php include'nav.php' ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <!--
     <title>compare fighters</title>
@@ -18,10 +18,97 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
-<body style="background-color: rgba(230,217,230,0.3)">
-    <p><a href="index.php?action=home" class="previous"><button style="border: none;background-color: darkgrey;border-radius: 20px">&laquo; back home</button></a></p>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <title>stats</title>
 
+    <style>
+        body{
+            background-color: rgba(230,217,230,0.3)
+        }
+        div.scrollmenu {
+            display: inline-block;
+            background-color: aliceblue;
+            overflow: auto;
+            white-space: nowrap;
+        }
+
+        div.scrollmenu a {
+            display: inline-block;
+            color: white;
+            padding: 14px;
+            text-decoration: none;
+        }
+
+        div.scrollmenu a:hover {
+            background-color: papayawhip;
+        }
+        ul.scrollmenu {
+            display: inline-list-item;
+
+        }
+    </style>
+
+</head>
+<body >
+
+
+
+    <?php
+
+
+    $keyword = $searchQuery;
+
+    //DENAS get an api key please dont use mine
+
+    $apikey = 'AIzaSyCtjx8gYCgn2MuoJbYDA4c-GMWipKjTZEg';
+    $googleApiUrl = 'https://www.googleapis.com/youtube/v3/search?part=snippet&q=' . $keyword . '&maxResults=' . 15 . '&key=' . $apikey;
+
+    $ch = curl_init();
+
+    curl_setopt($ch, CURLOPT_HEADER, 0);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_URL, $googleApiUrl);
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+    curl_setopt($ch, CURLOPT_VERBOSE, 0);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    $response = curl_exec($ch);
+
+    curl_close($ch);
+    $data = json_decode($response);
+    $value = json_decode(json_encode($data), true);
+    ?>
+
+
+
+
+<div class="scrollmenu">
+
+        <?php
+
+        for ($i = 0; $i < 15; $i++) {
+           @$videoId = $value['items'][$i]['id']['videoId'];
+            @$title = $value['items'][$i]['snippet']['title'];
+            //$description = $value['items'][$i]['snippet']['description'];
+            ?>
+
+            <a data-html="video" style="width: 30%">
+            <div class="video-tile" id="video<?=$i?>" >
+                <div  class="videoDiv">
+                    <iframe id="iframe" style="width:100%;height:25%" src="//www.youtube.com/embed/<?php echo $videoId; ?>"
+                                data-autoplay-src="//www.youtube.com/embed/<?php echo $videoId; ?>?autoplay=1"></iframe>
+                </div>
+                <div class="videoInfo">
+                    <div class="videoTitle"><b><?php echo $title; ?></b></div>
+                </div>
+            </div>
+            </a>
+
+
+
+            <?php
+        }
+        ?>
+</div>
     <div class="navbar" style="background-color: lavender; border: none">
         <ul class="nav navbar-nav" style="width: 100%">
             <li style="width: 50%"><div class="label" style="alignment: center"><h1 style="color: red;"><?=$fighterRedStats[0]?></h1></div></li>
