@@ -50,9 +50,10 @@
                 <div class="navbar" style="margin-right: 20px">
                     <ul class="nav" >
                         <li><input type="text" name="homeSearchLabel" id="homeSearchLabel" placeholder="   Enter Fighter Here" style="height: 60px;
-background-color:seashell; border-radius: 12px;width: 60%"></li>
+background-color:seashell; border-radius: 12px;width: 60%;outline: 0!important;"></li>
                         <li><p>&nbsp</p></li>
-                        <li><button id="homeSearchBut" style="border-style: dot-dash;background-color: rgba(80,138,154,0.6); border-radius: 30px;height: 60px;border: none; width: 60%;alignment: center; font-size: 250%; color: rgba(200,20,60,.8)">Search</button></li>
+                        <li><button id="homeSearchBut" style="border-style: dot-dash;background-color: rgba(80,138,154,0.6); border-radius: 30px;
+                        height: 60px;border: none; width: 60%;alignment: center; font-size: 250%; color: rgba(200,20,60,.8);outline: 0!important;">Search</button></li>
                     </ul>
                 </div>
 
@@ -83,7 +84,7 @@ background-color:seashell; border-radius: 12px;width: 60%"></li>
             <div id="fb-root"></div>
             <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v6.0"></script>
             <div class="fb-page" data-href="https://www.facebook.com/MojahedFudailat/" data-tabs="timeline"
-                 data-width="500" data-height="500" data-small-header="false" data-adapt-container-width="true"
+                 data-width="500" data-height="480" data-small-header="false" data-adapt-container-width="true"
                  data-hide-cover="false" data-show-facepile="true">
                 <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore">
                     <a href="https://www.facebook.com/facebook">Facebook</a>

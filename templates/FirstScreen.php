@@ -23,8 +23,8 @@
     <title>UFC World</title>
     <style>
         body {
-            font-family: "Lato", sans-serif;
-            background-color: rgba(0, 70, 100, .2);
+            font-family: "Lato";
+            background-color: rgba(20, 10, 100, .02);
         }
 
         .sidepanel  {
@@ -33,10 +33,9 @@
             z-index: 1;
             top: 0;
             left: 0;
-            background-color: rgba(10,40,30,.7);
+            background-color: rgba(10,40,30,.3);
             overflow-x:  hidden;
             transition: 0.5s;
-
         }
 
         .sidepanel a {
@@ -54,15 +53,18 @@
 
         .openbtn{
             horiz-align: center;
-            color: maroon;
-            background-color: rgba(0, 90, 200, .4);
+            background-color: rgba(10,33,12,.7);
             border: none;
             width: 30%;
-            border-radius: 20px;
+            border-radius:10px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            outline: 0!important;
+
         }
 
         .openbtn:hover {
-            background-color: rgba(100,100,100,1);
+            background-color: rgba(155, 40, 20, .8);
         }
         .closebtn{
             display: none;
@@ -78,21 +80,21 @@
 
 
     <p align="center" >
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal" style="width: 100%">
+        <button type="button"  data-toggle="modal" data-target="#loginModal" style="width: 100%; background-color: rgba(190,220,240,1);border: none">
         login
         </button>
     </p>
 
     <p align="center">
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registerModal" style="width: 100%">
+        <button type="button"  data-toggle="modal" data-target="#registerModal" style="width: 100%; background-color: rgba(190,220,240,1);border: none">
         register
        </button>
     </p>
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="alignment: center"><p align="center">nvm</p></a>
 </div>
 
-<div class="panel" align="center" style="background-color: rgba(0,0,0,.3)">
-<button class="openbtn" onclick="openNav()" ><p style="font-size: 300%">MMAhub</p></button>
+<div class="panel" align="center" style="">
+    <button class="openbtn" onclick="openNav()" ><p style="font-size: 300%; color: rgba(190,220,240,1)">MMAhub</p></button>
 </div>
 
 <img src='MajorLogo.jpg' alt="">

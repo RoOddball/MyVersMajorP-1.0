@@ -26,13 +26,14 @@
             background-color: rgba(230,217,230,0.3)
         }
         div.scrollmenu {
-            display: inline-block;
+
             background-color: aliceblue;
             overflow: auto;
             white-space: nowrap;
         }
 
         div.scrollmenu a {
+            width: 80%;
             display: inline-block;
             color: white;
             padding: 14px;
@@ -95,10 +96,10 @@
             <div class="video-tile" id="video<?=$i?>" >
                 <div  class="videoDiv">
                     <iframe id="iframe" style="width:100%;height:25%" src="//www.youtube.com/embed/<?php echo $videoId; ?>"
-                                data-autoplay-src="//www.youtube.com/embed/<?php echo $videoId; ?>?autoplay=1"></iframe>
+                                data-autoplay-src="//www.youtube.com/embed/<?php echo $videoId; ?>?autoplay=1" allowfullscreen></iframe>
                 </div>
                 <div class="videoInfo">
-                    <div class="videoTitle"><b><?php echo $title; ?></b></div>
+                    <!--<div class="videoTitle" ><b><?php echo $title; ?></b></div>-->
                 </div>
             </div>
             </a>
