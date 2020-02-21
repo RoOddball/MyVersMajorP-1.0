@@ -97,7 +97,9 @@
     <button class="openbtn" onclick="openNav()" ><p style="font-size: 300%; color: rgba(190,220,240,1)">MMAhub</p></button>
 </div>
 
-<img src='MajorLogo.jpg' alt="">
+<div class="panel" align="center" style="padding-top:10%">
+    <img src = "http://localhost:8000/images/MajorLogo.jpg" alt="" style="opacity:.5; width:20%; length:20%">
+</div>
 
 
 

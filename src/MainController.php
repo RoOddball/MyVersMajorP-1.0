@@ -67,14 +67,17 @@ class MainController
 
         $name= MainController::existsUser($username);
 
+
         if(!$name) {
+
 
             $this->session->isLoggedIn();
             $this->databaseHandler->insertUser($username, $password,$address);
             $this->session->storeUsername($username);
             @$this->session->storeIsAdmin(mysqli_fetch_array($name)[2]);
-            include '../templates/nav.php';
-            require_once __DIR__ . '/../templates/HomePage.php';
+            //include '../templates/nav.php';
+            //require_once __DIR__ . '/../templates/HomePage.php';
+            $this->firstScreen();
           
 
         }else{
@@ -156,7 +159,7 @@ class MainController
 
        if($this->session->isLoggedIn()) {
 
-           $searchQuery = $this->session->getQuery();
+           $searchQuery = str_replace(" ","%20",$this->session->getQuery());
            $query= $_SESSION['fighter'][$_GET["i"]];
 
            $fighterRedStats = mysqli_fetch_all($this->databaseHandler->searchFighterStats(intval($query[0])))[0];
