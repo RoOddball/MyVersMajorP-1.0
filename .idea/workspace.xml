@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56a13cae-afc5-4391-97b5-253579a96692" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/MajorLogo.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/DesignArchitecture.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/DesignArchitecture.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/falloutBoy.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/falloutBoy.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/litFallout.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/litFallout.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/mmaFighting.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/mmaFighting.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/mmaMania.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/mmaMania.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/FirstScreen.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/FirstScreen.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -204,7 +196,7 @@
       <path value="$PROJECT_DIR$/vendor/google/apiclient" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="780" />
     <option name="y" value="-15" />
     <option name="width" value="945" />
@@ -216,6 +208,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -258,13 +251,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../WEB FRAMEWORK/LabTest1/question3" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -524,11 +516,14 @@
       <workItem from="1582279904199" duration="1079000" />
       <workItem from="1582282925951" duration="3057000" />
       <workItem from="1582286756967" duration="604000" />
+      <workItem from="1582657360753" duration="32000" />
+      <workItem from="1582886487550" duration="249000" />
+      <workItem from="1582887758848" duration="251000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="470530000" />
+    <option name="totallyTimeSpent" value="471062000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -540,9 +535,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2147651" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22416107" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="0" weight="0.3289689" />
