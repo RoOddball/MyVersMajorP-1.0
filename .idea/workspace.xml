@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56a13cae-afc5-4391-97b5-253579a96692" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/src/ForumComment.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/ForumTopic.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/templates/ForumTopicDiscussion.php" afterDir="false" />
@@ -22,6 +23,9 @@
       <change beforePath="$PROJECT_DIR$/templates/register.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/testPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/FightersCompare.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> cc3a33dcc5b7c59c9a9e2734eaffbd540803f801
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -263,6 +267,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -284,13 +289,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../WEB FRAMEWORK/LabTest1/question3" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -554,17 +558,24 @@
       <workItem from="1582657360753" duration="32000" />
       <workItem from="1582886487550" duration="249000" />
       <workItem from="1582887758848" duration="251000" />
+<<<<<<< HEAD
       <workItem from="1583349482355" duration="12907000" />
       <workItem from="1583390155931" duration="10651000" />
       <workItem from="1583404625507" duration="1745000" />
       <workItem from="1583411232690" duration="4378000" />
       <workItem from="1583425006764" duration="1108000" />
       <workItem from="1583426146391" duration="1252000" />
+=======
+>>>>>>> cc3a33dcc5b7c59c9a9e2734eaffbd540803f801
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="503103000" />
+=======
+    <option name="totallyTimeSpent" value="471062000" />
+>>>>>>> cc3a33dcc5b7c59c9a9e2734eaffbd540803f801
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -578,7 +589,11 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
+<<<<<<< HEAD
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13892618" />
+=======
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22416107" />
+>>>>>>> cc3a33dcc5b7c59c9a9e2734eaffbd540803f801
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="0" weight="0.3289689" />
