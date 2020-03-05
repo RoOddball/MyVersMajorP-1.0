@@ -45,7 +45,6 @@ class DatabaseHandler
 
         $j=0;
         $i=0;
-        //$id=0;
 
         foreach($keys as $key):
 
@@ -77,5 +76,31 @@ class DatabaseHandler
         $conn = $this->databaseSpecs->getConn();
         $result = mysqli_query($conn,"select fighterName,weight,height,p4vRank,nationality,win,loss,draw,dateOfBirth from fighter where id=$fighterId");
         return $result;
+    }
+    public function searchForumTopics(){
+
+        $conn = $this->databaseSpecs->getConn();
+        $result = mysqli_query($conn,"select * from forumTopic");
+        return $result;
+    }
+
+    public function searchTopicByTitle($topicTitle){
+
+        $conn = $this->databaseSpecs->getConn();
+        $result = mysqli_fetch_all(mysqli_query($conn,"select * from forumTopic where name like '$topicTitle'"))[0][0];
+        return $result;
+    }
+
+    public function searchForumComments($topicId){
+
+        $conn = $this->databaseSpecs->getConn();
+        $result = mysqli_query($conn,"select * from comment where topicId = $topicId" );
+        return $result;
+    }
+
+    public function storeComment($topicId,$nickName,$commentContent){
+
+        $conn = $this->databaseSpecs->getConn();
+        mysqli_query($conn,"insert into comment (topicId,userName,content) values($topicId, '$nickName','$commentContent')");
     }
 }

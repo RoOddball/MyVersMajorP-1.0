@@ -35,7 +35,7 @@
     <ul class="nav navbar-nav" style="width: 100%">
         <li style="width: 25%"><a href="DisplayRankings.php" style="color: black">Rankings</a></li>
         <li style="width: 25%"><a href="DisplayArchive.php" style="color: black">Archive</a></li>
-        <li style="width: 25%"><a href="AdminTool.php" style="color: black">Admin Tool</a></li>
+        <li style="width: 25%"><a href="index.php?action=forum" style="color: black">Forum </a></li>
         <li style="width: 25%"><a href ="index.php?action=logout" style="color: black">Logout</a></li>
     </ul>
  </div>

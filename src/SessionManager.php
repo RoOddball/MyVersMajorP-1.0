@@ -72,4 +72,24 @@ class SessionManager
 
         return $_SESSION['searchQuery'];
     }
+
+    public function storeForumTopicId($topicId){
+
+        $_SESSION['topicId'] = $topicId;
+    }
+
+    public function getTopicIdFromSession(){
+
+        return $_SESSION['topicId'];
+    }
+
+    public function storeForumTopicTitle($topicTitle){
+
+        $_SESSION['topicTitle'] = $topicTitle;
+    }
+
+    public function getTopicTitleFromSession(){
+
+        return $_SESSION['topicTitle'];
+    }
 }

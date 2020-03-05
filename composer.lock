@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e36c1f3803f7d9d4f4e81b9aa202f069",
+    "content-hash": "eecc8ca50454503c6b7163f9755470c4",
     "packages": [
         {
             "name": "behat/gherkin",
@@ -292,12 +292,12 @@
             "version": "1.6.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/facebook/php-webdriver.git",
+                "url": "https://github.com/php-webdriver/php-webdriver-archive.git",
                 "reference": "bd8c740097eb9f2fc3735250fc1912bc811a954e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/facebook/php-webdriver/zipball/bd8c740097eb9f2fc3735250fc1912bc811a954e",
+                "url": "https://api.github.com/repos/php-webdriver/php-webdriver-archive/zipball/bd8c740097eb9f2fc3735250fc1912bc811a954e",
                 "reference": "bd8c740097eb9f2fc3735250fc1912bc811a954e",
                 "shasum": ""
             },
@@ -2940,7 +2940,8 @@
     "platform": {
         "ext-mysqli": "*",
         "ext-curl": "*",
-        "ext-json": "*"
+        "ext-json": "*",
+        "ext-dom": "20031129"
     },
     "platform-dev": []
 }

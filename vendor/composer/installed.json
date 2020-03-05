@@ -296,12 +296,12 @@
         "version_normalized": "1.6.0.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/facebook/php-webdriver.git",
+            "url": "https://github.com/php-webdriver/php-webdriver-archive.git",
             "reference": "bd8c740097eb9f2fc3735250fc1912bc811a954e"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/facebook/php-webdriver/zipball/bd8c740097eb9f2fc3735250fc1912bc811a954e",
+            "url": "https://api.github.com/repos/php-webdriver/php-webdriver-archive/zipball/bd8c740097eb9f2fc3735250fc1912bc811a954e",
             "reference": "bd8c740097eb9f2fc3735250fc1912bc811a954e",
             "shasum": ""
         },

@@ -2,15 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56a13cae-afc5-4391-97b5-253579a96692" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/MajorLogo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ForumComment.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ForumTopic.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/ForumTopicDiscussion.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/ForumTopics.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/DesignArchitecture.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/DesignArchitecture.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/falloutBoy.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/falloutBoy.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/litFallout.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/litFallout.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/mmaFighting.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/mmaFighting.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/mmaMania.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/mmaMania.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DatabaseHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DatabaseHandler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/FirstScreen.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/FirstScreen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SessionManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/SessionManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebApp.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApp.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/DisplayError.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/HomePage.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/HomePage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/LoginScreen.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/RegisterScreen.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/error.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/panel.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/testPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/FightersCompare.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,46 +35,82 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/FirstScreen.php">
+        <entry file="file://$PROJECT_DIR$/src/MainController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2567">
-              <caret line="151" column="69" selection-start-line="151" selection-start-column="69" selection-end-line="151" selection-end-column="69" />
+            <state relative-caret-position="4301">
+              <caret line="253" column="45" selection-start-line="253" selection-start-column="45" selection-end-line="253" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Event.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ForumComment.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="901">
+              <caret line="58" column="1" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/ForumTopics.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="64" column="14" selection-start-line="64" selection-start-column="14" selection-end-line="64" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/nav.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="114" selection-start-line="6" selection-start-column="114" selection-end-line="6" selection-end-column="137" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/MainController.php">
+        <entry file="file://$PROJECT_DIR$/templates/ForumTopicDiscussion.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="161" column="74" selection-start-line="161" selection-start-column="74" selection-end-line="161" selection-end-column="74" />
+            <state relative-caret-position="505">
+              <caret line="56" column="127" selection-start-line="56" selection-start-column="127" selection-end-line="56" selection-end-column="127" />
+              <folding>
+                <element signature="n#style#0;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#1;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#1;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#2;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WebApp.php">
+        <entry file="file://$PROJECT_DIR$/templates/FirstScreen.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="44" selection-start-line="44" selection-end-line="44" />
+            <state relative-caret-position="-600">
+              <caret line="88" column="79" selection-start-line="88" selection-start-column="31" selection-end-line="88" selection-end-column="79" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/homeSearchResults.php">
+        <entry file="file://$PROJECT_DIR$/templates/HomePage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="50" column="32" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/testPage.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1462">
-              <caret line="86" column="13" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="13" />
+            <state relative-caret-position="627">
+              <caret line="62" column="12" selection-start-line="62" selection-start-column="12" selection-end-line="62" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -92,13 +139,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tests/acceptance/CRUDtestCest.php" />
-        <option value="$PROJECT_DIR$/tests/acceptance/FighterInfoCest.php" />
-        <option value="$PROJECT_DIR$/tests/acceptance/FightCardCest.php" />
-        <option value="$PROJECT_DIR$/public/AdminTool.php" />
-        <option value="$PROJECT_DIR$/public/AddEvent.php" />
-        <option value="$PROJECT_DIR$/public/DeleteEvent.php" />
-        <option value="$PROJECT_DIR$/public/DisplayArchive.php" />
         <option value="$PROJECT_DIR$/public/DisplayFightCard.php" />
         <option value="$PROJECT_DIR$/public/DisplayFighterInfo.php" />
         <option value="$PROJECT_DIR$/public/DisplayRankings.php" />
@@ -130,19 +170,26 @@
         <option value="$PROJECT_DIR$/src/Event.php" />
         <option value="$PROJECT_DIR$/templates/testPage.js" />
         <option value="$PROJECT_DIR$/templates/testPage.html" />
-        <option value="$PROJECT_DIR$/src/DatabaseHandler.php" />
         <option value="$PROJECT_DIR$/public/index.php" />
-        <option value="$PROJECT_DIR$/src/WebApp.php" />
         <option value="$PROJECT_DIR$/templates/LogoutScreen.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/src/Query.php" />
-        <option value="$PROJECT_DIR$/src/SessionManager.php" />
-        <option value="$PROJECT_DIR$/templates/homeSearchResults.php" />
         <option value="$PROJECT_DIR$/templates/testPage.php" />
         <option value="$PROJECT_DIR$/templates/nav.php" />
-        <option value="$PROJECT_DIR$/templates/HomePage.php" />
         <option value="$PROJECT_DIR$/templates/FirstScreen.php" />
+        <option value="$PROJECT_DIR$/templates/homeSearchResults.php" />
+        <option value="$PROJECT_DIR$/templates/panel.html" />
+        <option value="$PROJECT_DIR$/templates/Forum.html" />
+        <option value="$PROJECT_DIR$/templates/HomePage.php" />
+        <option value="$PROJECT_DIR$/src/ForumTopic.php" />
+        <option value="$PROJECT_DIR$/templates/ForumTopics.html" />
+        <option value="$PROJECT_DIR$/templates/ForumTopics.php" />
+        <option value="$PROJECT_DIR$/src/ForumComment.php" />
+        <option value="$PROJECT_DIR$/src/WebApp.php" />
+        <option value="$PROJECT_DIR$/src/SessionManager.php" />
+        <option value="$PROJECT_DIR$/src/DatabaseHandler.php" />
         <option value="$PROJECT_DIR$/src/MainController.php" />
+        <option value="$PROJECT_DIR$/templates/ForumTopicDiscussion.php" />
       </list>
     </option>
   </component>
@@ -204,7 +251,7 @@
       <path value="$PROJECT_DIR$/vendor/google/apiclient" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="780" />
     <option name="y" value="-15" />
     <option name="width" value="945" />
@@ -221,38 +268,17 @@
           <expand>
             <path>
               <item name="ProjectMod" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mine 3" type="462c0819:PsiDirectoryNode" />
+              <item name="Mine 4" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ProjectMod" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mine 3" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjectMod" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mine 3" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjectMod" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mine 3" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjectMod" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mine 3" type="462c0819:PsiDirectoryNode" />
+              <item name="Mine 4" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ProjectMod" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mine 3" type="462c0819:PsiDirectoryNode" />
+              <item name="Mine 4" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjectMod" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mine 3" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -271,17 +297,18 @@
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\docs\TUDublinYr3\MajorProject\Mine 4\templates" />
+      <recent name="D:\docs\TUDublinYr3\MajorProject\Mine 3\images" />
+      <recent name="D:\docs\TUDublinYr3\MajorProject\Mine 3\templates" />
+      <recent name="C:\Users\tarab\Desktop\ProjectMod\templates" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\docs\TUDublinYr3\MajorProject\Mine 3\public" />
       <recent name="D:\docs\TUDublinYr3\MajorProject\Mine 3\templates" />
       <recent name="C:\Users\tarab\Desktop\ProjectMod\templates" />
       <recent name="C:\Users\tarab\Desktop\Project\templates" />
       <recent name="C:\Users\tarab\Desktop\Project" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\docs\TUDublinYr3\MajorProject\Mine 3\images" />
-      <recent name="D:\docs\TUDublinYr3\MajorProject\Mine 3\templates" />
-      <recent name="C:\Users\tarab\Desktop\ProjectMod\templates" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -296,16 +323,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.testPage.php">
-    <configuration name="homeSearchResults.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ProjectMod/templates/homeSearchResults.php" useBuiltInWebServerPort="true">
+  <component name="RunManager" selected="JavaScript Debug.FightersCompare.php">
+    <configuration name="FightersCompare.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ProjectMod/templates/FightersCompare.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="testPage.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ProjectMod/templates/testPage.php" useBuiltInWebServerPort="true">
+    <configuration name="homeSearchResults.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ProjectMod/templates/homeSearchResults.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.testPage.php" />
+        <item itemvalue="JavaScript Debug.FightersCompare.php" />
         <item itemvalue="JavaScript Debug.homeSearchResults.php" />
       </list>
     </recent_temporary>
@@ -524,11 +551,20 @@
       <workItem from="1582279904199" duration="1079000" />
       <workItem from="1582282925951" duration="3057000" />
       <workItem from="1582286756967" duration="604000" />
+      <workItem from="1582657360753" duration="32000" />
+      <workItem from="1582886487550" duration="249000" />
+      <workItem from="1582887758848" duration="251000" />
+      <workItem from="1583349482355" duration="12907000" />
+      <workItem from="1583390155931" duration="10651000" />
+      <workItem from="1583404625507" duration="1745000" />
+      <workItem from="1583411232690" duration="4378000" />
+      <workItem from="1583425006764" duration="1108000" />
+      <workItem from="1583426146391" duration="1252000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="470530000" />
+    <option name="totallyTimeSpent" value="503103000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -540,9 +576,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2147651" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13892618" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="0" weight="0.3289689" />
@@ -557,7 +593,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50067115" side_tool="true" weight="0.32719547" />
-      <window_info active="true" anchor="bottom" x="479" y="147" width="578" height="530" id="Terminal" order="12" side_tool="true" type="WINDOWED" visible="true" weight="0.32405892" />
+      <window_info anchor="bottom" x="885" y="160" width="578" height="530" id="Terminal" order="12" side_tool="true" type="WINDOWED" weight="0.32405892" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -590,12 +626,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/DisplayRankings.php" />
-    <entry file="file://$PROJECT_DIR$/public/DisplayArchive.php" />
-    <entry file="file://$PROJECT_DIR$/tests/acceptance/AdminToolCest.php" />
-    <entry file="file://$PROJECT_DIR$/composer.lock">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/acceptance/LoginScreenCest.php" />
     <entry file="file://$PROJECT_DIR$/tests/_output/FightCardCest.FightCardWorking.fail.html" />
     <entry file="file://$PROJECT_DIR$/tests/_output/HomePageCest.homepageWorking.fail.html" />
@@ -603,33 +633,12 @@
     <entry file="file://$PROJECT_DIR$/tests/_output/AdminToolCest.adminTool.fail.html" />
     <entry file="file://$PROJECT_DIR$/tests/_output/ArchiveCest.archiveWorking.fail.html" />
     <entry file="file://$PROJECT_DIR$/tests/_data/dump.sql" />
-    <entry file="file://$PROJECT_DIR$/templates/panel.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_Project.zip/Project/src/User.php" />
-    <entry file="file://$PROJECT_DIR$/templates/error.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/css/NavBar.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/css/background.css">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/DisplayError.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/about.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -698,27 +707,9 @@
     <entry file="file://$PROJECT_DIR$/templates/MajorLogo.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/LoginScreen.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/RegisterScreen.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/LoginScreen.html" />
+    <entry file="file://$PROJECT_DIR$/templates/register.html" />
+    <entry file="file://$PROJECT_DIR$/templates/RegisterScreen.php" />
     <entry file="file://$PROJECT_DIR$/public/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -742,45 +733,10 @@
     <entry file="file://$PROJECT_DIR$/public/images/falloutBoy.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/nav.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="166" selection-start-line="5" selection-start-column="166" selection-end-line="5" selection-end-column="166" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/HomePage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1428">
-          <caret line="86" column="49" selection-start-line="86" selection-start-column="49" selection-end-line="86" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SessionManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Event.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DatabaseHandler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -798,38 +754,113 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/FirstScreen.php">
+    <entry file="file://$PROJECT_DIR$/templates/panel.html" />
+    <entry file="file://$PROJECT_DIR$/templates/DisplayError.php" />
+    <entry file="file://$PROJECT_DIR$/templates/error.php" />
+    <entry file="file://$PROJECT_DIR$/templates/homeSearchResults.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2567">
-          <caret line="151" column="69" selection-start-line="151" selection-start-column="69" selection-end-line="151" selection-end-column="69" />
+        <state relative-caret-position="1768">
+          <caret line="104" selection-start-line="104" selection-end-line="106" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/WebApp.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        <state relative-caret-position="1207">
+          <caret line="71" column="18" selection-start-line="71" selection-start-column="18" selection-end-line="71" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/homeSearchResults.php">
+    <entry file="file://$PROJECT_DIR$/templates/FightersCompare.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="50" column="32" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
+        <state relative-caret-position="1292">
+          <caret line="76" column="20" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/testPage.php">
+    <entry file="file://$PROJECT_DIR$/src/DatabaseHandler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1462">
-          <caret line="86" column="13" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="13" />
+        <state relative-caret-position="1785">
+          <caret line="105" column="1" selection-start-line="105" selection-start-column="1" selection-end-line="105" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SessionManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1343">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ForumTopic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MainController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="161" column="74" selection-start-line="161" selection-start-column="74" selection-end-line="161" selection-end-column="74" />
+        <state relative-caret-position="4301">
+          <caret line="253" column="45" selection-start-line="253" selection-start-column="45" selection-end-line="253" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ForumComment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="58" column="1" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/nav.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="114" selection-start-line="6" selection-start-column="114" selection-end-line="6" selection-end-column="137" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ForumTopics.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="64" column="14" selection-start-line="64" selection-start-column="14" selection-end-line="64" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/FirstScreen.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-600">
+          <caret line="88" column="79" selection-start-line="88" selection-start-column="31" selection-end-line="88" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/HomePage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="62" column="12" selection-start-line="62" selection-start-column="12" selection-end-line="62" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ForumTopicDiscussion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="56" column="127" selection-start-line="56" selection-start-column="127" selection-end-line="56" selection-end-column="127" />
+          <folding>
+            <element signature="n#style#0;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#1;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#2;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -55,6 +55,22 @@ public function run()
             $mainController->fighterStats();
             break;
 
+        case 'forum':
+            $mainController->forum();
+            break;
+
+        case 'commitTopic':
+            $mainController->commitForumTopic();
+            break;
+
+        case 'forumTopicDiscussion':
+            $mainController->forumTopicDiscussion();
+            break;
+
+        case 'commitComment':
+            $mainController->commitComment();
+            break;
+
         default:
             $mainController->firstScreen();
             $_SESSION=[];
