@@ -19,11 +19,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://apis.google.com/js/api.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
     <title>stats</title>
 
     <style>
         body{
             background-color: rgba(230,217,230,0.3)
+            font-family: 'Allerta Stencil',sans-serif
         }
         div.scrollmenu {
 
@@ -47,12 +49,18 @@
             display: inline-list-item;
 
         }
+        .w3-table-all tr td{
+
+        }
+
     </style>
 
 </head>
 <body >
 
-
+&nbsp
+<div>  &nbsp &nbsp ...a youtube result based on the query: "<?php echo str_replace('%20',' ',$searchQuery) ?>"</div>
+&nbsp
 
     <?php
 
@@ -61,7 +69,7 @@
 
     //DENAS get an api key please dont use mine
 
-    $apikey = 'AIzaSyCtjx8gYCgn2MuoJbYDA4c-GMWipKjTZEg';
+    $apikey = 'AIzaSyCzQYD7xhrEldov3qDtmOtZ5Fpwgh75NFg';
     $googleApiUrl = 'https://www.googleapis.com/youtube/v3/search?part=snippet&q=' . $keyword . '&maxResults=' . 15 . '&key=' . $apikey;
 
     $ch = curl_init();
@@ -78,7 +86,6 @@
     $data = json_decode($response);
     $value = json_decode(json_encode($data), true);
     ?>
-
 
 
 
@@ -110,75 +117,53 @@
         }
         ?>
 </div>
-    <div class="navbar" style="background-color: lavender; border: none">
-        <ul class="nav navbar-nav" style="width: 100%">
-            <li style="width: 50%"><div class="label" style="alignment: center"><h1 style="color: red;"><?=$fighterRedStats[0]?></h1></div></li>
-            <li style="width: 50%"><div class="label" style="alignment: center"><h1 style="color: blue"><?=$fighterBlueStats[0]?></h1></div></li>
-        </ul>
-    </div>
-
-
-    <div data-role="navbar" style="background-color: rgba(1,1,1,0.1)">
-        <ul class="nav navbar-nav" style="width:100%;">
-            <li style="width: 100%"><div class="label" style="alignment:left"><p style="font-size: 150%;color: black">Weight Class -&nbsp <?=$fighterRedStats[1]?></p></div></li>
-        </ul>
-    </div>
-
-    <div class="navbar" style="background-color: rgba(1,1,1,0.1)">
-        <ul class="nav navbar-nav" style="width: 100%">
-            <li style="width: 30%"><div class="label" style="alignment: center"><div style="color: black"><?=$fighterRedStats[2]?></div></div></li>
-            <li style="width: 40%"><div class="label" style="color: black"><div style="font-size: 150%">Height</div></div></li>
-            <li style="width: 30%"><div class="label" style="alignment: center"><div style="color: black"><?=$fighterBlueStats[2]?></div></div></li>
-        </ul>
-    </div>
-
-    <div class="navbar" style="background-color: rgba(1,1,1,0.1)">
-        <ul class="nav navbar-nav" style="width:100%">
-            <li style="width: 30%"><div class="label" style="alignment: center"><div style="color: black"><?=$fighterRedStats[3]?></div></li>
-            <li style="width: 40%"><div class="label" style="color: black"><div style="font-size: 150%">Pay per view rank</div></div></li>
-            <li style="width: 30%"><div class="label" style="alignment: center"><div style="color: black"><?=$fighterBlueStats[3]?></div></li>
-        </ul>
-    </div>
-
-    <div class="navbar" style="background-color: rgba(1,1,1,0.1)">
-        <ul class="nav navbar-nav" style="width:100%">
-            <li style="width: 30%"><div class="label" style="alignment: center"><div style="color: black"><?=$fighterRedStats[4]?></div></div></li>
-            <li style="width: 40%"><div class="label" style="color: black"><div style="font-size: 150%">Country</div></div></li>
-            <li style="width: 30%"><div class="label" style="alignment: center"><div style="color: black"><?=$fighterBlueStats[4]?></div></div></li>
-        </ul>
-    </div>
-
-    <div class="navbar" style="background-color: rgba(1,1,1,0.1)">
-        <ul class="nav navbar-nav" style="width:100%">
-            <li style="width: 30%"><div class="label" style="alignment: center"><div style="color: black"><?=$fighterRedStats[5]?></div></div></li>
-            <li style="width: 40%"><div class="label" style="color: black"><div style="font-size: 150%">Wins</div></div></li>
-            <li style="width: 30%"><div class="label" style="alignment: center"><div style="color: black"><?=$fighterBlueStats[5]?></div></div></li>
-        </ul>
-    </div>
-
-    <div class="navbar" style="background-color: rgba(1,1,1,0.1)">
-        <ul class="nav navbar-nav" style="width:100%">
-            <li style="width: 30%"><div class="label" style="alignment: center"><div style="color: black"><?=$fighterRedStats[6]?></div></div></li>
-            <li style="width: 40%"><div class="label" style="color: black"><div style="font-size: 150%">Losses</div></div></li>
-            <li style="width: 30%"><div class="label" style="alignment: center"><div style="color: black"><?=$fighterBlueStats[6]?></div></div></li>
-        </ul>
-    </div>
-
-    <div class="navbar" style="background-color: rgba(1,1,1,0.1)">
-        <ul class="nav navbar-nav" style="width:100%">
-            <li style="width: 30%"><div class="label" style="alignment: center"><div style="color: black"><?=$fighterRedStats[7]?></div></div></li>
-            <li style="width: 40%"><div class="label" style="color: black"><div style="font-size: 150%">Draw</div></div></li>
-            <li style="width: 30%"><div class="label" style="alignment: center"><div style="color: black"><?=$fighterBlueStats[7]?></div></div></li>
-        </ul>
-    </div>
-
-    <div class="navbar" style="background-color: rgba(1,1,1,0.1)">
-        <ul class="nav navbar-nav" style="width:100%">
-            <li style="width: 30%"><div class="label" style="alignment: center"><div style="color: black"><?=$fighterRedStats[8]?></div></div></li>
-            <li style="width: 40%"><div class="label" style="color: black"><div style="font-size: 150%">Date Of Birth</div></div></li>
-            <li style="width: 30%"><div class="label" style="alignment: center"><div style="color: black"><?=$fighterBlueStats[8]?></div></div></li>
-        </ul>
-    </div>
+    <table class="w3-table-all w3-centered">
+        <tr>
+            <td style="background-color: aliceblue; color:rgba(224,44,59,1); font-family: 'Allerta Stencil',sans-serif; font-size: 300%;width:40%"><?=$fighterRedStats[0]?></td>
+            <td style="font-size: 300%;width: 20%; background-color: rgba(10,10,150,.1);text-shadow: 1px 1px 1px red; font-family: 'Allerta Stencil',sans-serif">vs</td>
+            <td style="background-color: aliceblue; color:rgba(59,44,224,1); font-family: 'Allerta Stencil',sans-serif; font-size: 300%;width: 40%"><?=$fighterBlueStats[0]?></td>
+        </tr>
+        <tr>
+            <td><?=$fighterRedStats[1]?></td>
+            <td>weight class</td>
+            <td><?=$fighterBlueStats[1]?></td>
+        </tr>
+        <tr>
+            <td><?=$fighterRedStats[2]?></td>
+            <td>height</td>
+            <td><?=$fighterBlueStats[2]?></td>
+        </tr>
+        <tr>
+            <td><?=$fighterRedStats[3]?></td>
+            <td>PPV rank</td>
+            <td><?=$fighterBlueStats[3]?></td>
+        </tr>
+        <tr>
+            <td><?=$fighterRedStats[4]?></td>
+            <td>country of origin</td>
+            <td><?=$fighterBlueStats[4]?></td>
+        </tr>
+        <tr>
+            <td><?=$fighterRedStats[5]?></td>
+            <td>wins</td>
+            <td><?=$fighterBlueStats[5]?></td>
+        </tr>
+        <tr>
+            <td><?=$fighterRedStats[6]?></td>
+            <td>losses</td>
+            <td><?=$fighterBlueStats[6]?></td>
+        </tr>
+        <tr>
+            <td><?=$fighterRedStats[7]?></td>
+            <td>draw</td>
+            <td><?=$fighterBlueStats[7]?></td>
+        </tr>
+        <tr>
+            <td><?=$fighterRedStats[8]?></td>
+            <td>date of birth</td>
+            <td><?=$fighterBlueStats[8]?></td>
+        </tr>
+    </table>
 
 </body>
 </html>

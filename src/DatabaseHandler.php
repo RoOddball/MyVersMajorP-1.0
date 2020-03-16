@@ -98,9 +98,9 @@ class DatabaseHandler
         return $result;
     }
 
-    public function storeComment($topicId,$nickName,$commentContent){
+    public function storeComment($topicId,$nickName,$commentContent,$dateAndTime){
 
         $conn = $this->databaseSpecs->getConn();
-        mysqli_query($conn,"insert into comment (topicId,userName,content) values($topicId, '$nickName','$commentContent')");
+        mysqli_query($conn,"insert into comment (topicId,userName,content,dateAndTime) values($topicId, '$nickName','$commentContent','$dateAndTime')");
     }
 }

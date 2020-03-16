@@ -208,11 +208,18 @@ class MainController
         $nickName = $this->session->usernameFromSession();
 
         $topic = filter_input(INPUT_POST, 'forumTopic');
-        $forumTopic = new ForumTopic();
-        $forumTopic->setName($topic);
-        $this->databaseHandler->insertObjectIntoTable($forumTopic, 'forumTopic');
 
-        header("Location: {$_SERVER['HTTP_REFERER']}");
+        if($this->databaseHandler->searchTopicByTitle($topic)){
+            $errorMessage = 'the topic already exists';
+            header("Location: http://localhost:8000/index.php?action=forumTopicDiscussion&topicTitle=$topic");
+        }else {
+            $forumTopic = new ForumTopic();
+            $forumTopic->setName($topic);
+            $this->databaseHandler->insertObjectIntoTable($forumTopic, 'forumTopic');
+            header("Location: {$_SERVER['HTTP_REFERER']}");
+        }
+
+
     }
     public function forumTopicDiscussion(){
 
@@ -243,6 +250,7 @@ class MainController
             $topicId = intval($this->session->getTopicIdFromSession());
             $topicTitle = $this->session->getTopicTitleFromSession();
             $commentContent = filter_input(INPUT_POST, 'forumComment');
+            $dateAndTime = date("d.m.Y") . " at " . date("h.i") .":" ;
             $commentQuery= mysqli_fetch_all($this->databaseHandler->searchForumComments($topicId));
 
             if($commentQuery){
@@ -254,10 +262,11 @@ class MainController
 //            $comment->setTopicId($topicId);
 //            $comment->setUserName($nickName);
 //            $comment->setContent($commentContent);
+//            $comment->setDateAndTime(date("d.m.Y" . "at" . date("h.i" . ":")))
 //
 //            $this->databaseHandler->insertObjectIntoTable($comment,'comment');
 
-            $this->databaseHandler->storeComment($topicId,$nickName,$commentContent);
+            $this->databaseHandler->storeComment($topicId,$nickName,$commentContent,$dateAndTime);
             header("Location: {$_SERVER['HTTP_REFERER']}");
 
         }

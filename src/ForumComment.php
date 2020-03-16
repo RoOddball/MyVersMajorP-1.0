@@ -12,6 +12,17 @@ private $id;
 private $topicId;
 private $userName;
 private $content;
+private $dateAndTime;
+
+    public function getDateAndTme()
+    {
+        return $this->dateAndTime;
+    }
+
+    public function setDateAndTme($dateAndTime)
+    {
+        $this->dateAndTime = $dateAndTime;
+    }
 
     public function getId()
     {
@@ -53,7 +64,8 @@ private $content;
         return [
             $this->topicId,
             $this->userName,
-            $this->content
+            $this->content,
+            $this->dateAndTime
         ];
     }
 }
