@@ -1,8 +1,8 @@
 <footer>
     <style>
-        body{
+        footer{
             background-color: rgba(167,53,24,.3);
         }
     </style>
-    <?=$errorMessage?>
+    <h2>&nbsp &nbsp &nbsp ...<?=$errorMessage?>!!!<h2>
 </footer>

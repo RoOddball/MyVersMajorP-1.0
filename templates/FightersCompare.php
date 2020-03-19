@@ -2,16 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--
-    <title>compare fighters</title>
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    <script
-            src="https://code.jquery.com/jquery-3.3.1.js"
-            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-            crossorigin="anonymous"></script>
-            -->
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -62,41 +53,42 @@
 <div>  &nbsp &nbsp ...a youtube result based on the query: "<?php echo str_replace('%20',' ',$searchQuery) ?>"</div>
 &nbsp
 
-    <?php
-
-
-    $keyword = $searchQuery;
-
-    //DENAS get an api key please dont use mine
-
-    $apikey = 'AIzaSyCzQYD7xhrEldov3qDtmOtZ5Fpwgh75NFg';
-    $googleApiUrl = 'https://www.googleapis.com/youtube/v3/search?part=snippet&q=' . $keyword . '&maxResults=' . 15 . '&key=' . $apikey;
-
-    $ch = curl_init();
-
-    curl_setopt($ch, CURLOPT_HEADER, 0);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($ch, CURLOPT_URL, $googleApiUrl);
-    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-    curl_setopt($ch, CURLOPT_VERBOSE, 0);
-    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-    $response = curl_exec($ch);
-
-    curl_close($ch);
-    $data = json_decode($response);
-    $value = json_decode(json_encode($data), true);
-    ?>
+<!--    --><?php
+//
+//
+//    $keyword = $searchQuery;
+//
+//    //DENAS get an api key please dont use mine
+//
+//    $apikey = 'AIzaSyCzQYD7xhrEldov3qDtmOtZ5Fpwgh75NFg';
+//    $googleApiUrl = 'https://www.googleapis.com/youtube/v3/search?part=snippet&q=' . $keyword . '&maxResults=' . 15 . '&key=' . $apikey;
+//
+//    $ch = curl_init();
+//
+//    curl_setopt($ch, CURLOPT_HEADER, 0);
+//    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+//    curl_setopt($ch, CURLOPT_URL, $googleApiUrl);
+//    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+//    curl_setopt($ch, CURLOPT_VERBOSE, 0);
+//    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+//    $response = curl_exec($ch);
+//
+//    curl_close($ch);
+//    $data = json_decode($response);
+//    $value = json_decode(json_encode($data), true);
+//    ?>
 
 
 
 <div class="scrollmenu">
+    <?php
 
-        <?php
-
+    if(!$error){
         for ($i = 0; $i < 15; $i++) {
-           @$videoId = $value['items'][$i]['id']['videoId'];
+            @$videoId = $value['items'][$i]['id']['videoId'];
             @$title = $value['items'][$i]['snippet']['title'];
             //$description = $value['items'][$i]['snippet']['description'];
+
             ?>
 
             <a data-html="video" style="width: 30%">
@@ -115,7 +107,11 @@
 
             <?php
         }
-        ?>
+    }else{
+        $errorMessage = 'something went bad';
+        include __DIR__.'/../templates/error.php';
+    }
+    ?>
 </div>
     <table class="w3-table-all w3-centered">
         <tr>

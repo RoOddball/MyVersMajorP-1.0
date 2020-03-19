@@ -5,26 +5,33 @@
 
 
 <head>
-    <!--
-    <meta name="viewport" content="width=device-width, initial-scale=4">
-    <meta charset = "utf-8">
-    <script
-            src="https://code.jquery.com/jquery-3.3.1.js"
-            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-            crossorigin="anonymous"></script>
-            -->
+<!--
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+-->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
 
     <title>UFC World</title>
+
     <style>
         body {
-            font-family: "Lato";
-            background-color: rgba(20, 10, 100, .02);
+            font-family: "Allerta Stencil",sans-serif;
+            background-image: radial-gradient(white,rgba(245,114,186,.05),rgba(112,35,68,.2));
         }
 
         .sidepanel  {
@@ -53,21 +60,50 @@
 
         .openbtn{
             horiz-align: center;
-            background-color: rgba(10,33,12,.7);
+            background-color: rgba(10,33,12,.4);
             border: none;
             width: 30%;
             border-radius:10px;
             margin-top: 5px;
             margin-bottom: 5px;
             outline: 0!important;
-
+            font-size: 300%;
+            color: rgba(190,220,240,1)
         }
 
         .openbtn:hover {
-            background-color: rgba(155, 40, 20, .8);
+            text-shadow:2px 2px 2px black ;
+            transition: font 5s ease;
+            background-color: rgba(120,81,60,.6);
+            color:rgba(248,15,18,.8);
         }
+
         .closebtn{
             display: none;
+        }
+
+        #mySidepanel button{
+            width: 100%;
+            background-color: rgba(190,220,240,1);
+            border: none
+        }
+
+        #mySidepanel button:hover{
+            font-size:  200%;
+            background-color: rgba(120,81,60,.6);
+            color:wheat;
+            transition: font 1s ease;
+        }
+        .panel{
+            align-self: center;
+            opacity: 70%;
+            background-color: rgba(0,0,0,0);
+        }
+        img{
+            width: 20%;
+        }
+        .navbar-nav li{
+            width:25%;
         }
 
     </style>
@@ -80,13 +116,13 @@
 
 
     <p align="center" >
-        <button type="button"  data-toggle="modal" data-target="#loginModal" style="width: 100%; background-color: rgba(190,220,240,1);border: none">
+        <button type="button"  data-toggle="modal" data-target="#loginModal" >
         login
         </button>
     </p>
 
     <p align="center">
-        <button type="button"  data-toggle="modal" data-target="#registerModal" style="width: 100%; background-color: rgba(190,220,240,1);border: none">
+        <button type="button"  data-toggle="modal" data-target="#registerModal" >
         register
        </button>
     </p>
@@ -94,13 +130,26 @@
 </div>
 
 <div class="panel" align="center" style="">
-    <button class="openbtn" onclick="openNav()" ><p style="font-size: 300%; color: rgba(190,220,240,1)">MMAhub</p></button>
+    <button class="openbtn" onclick="openNav()" ><p>MMAhub</p></button>
 </div>
 
-<div class="panel" align="center" style="padding-top:10%">
-    <img src = "http://localhost:8000/images/MajorLogo.jpg" alt="" style="opacity:.5; width:20%; length:20%">
-</div>
 
+<br><br><br>
+<p style="font-family: 'Didact Gothic',sans-serif"> &nbsp &nbsp &nbsp welcome to our site!</p>
+
+<div class="panel" align="center"><img src="MajorLogo.jpg" alt=""></div>
+<br>
+<p align="right" style="font-family: 'Didact Gothic',sans-serif">... we would like to express out appreciation to the following entities for their helping with the development of this site &nbsp &nbsp &nbsp</p>
+
+<div class="navbar">
+    <ul class="nav navbar-nav">
+        <li><a href="https://gnews.io/"><p style="font-family: Impact, sans-serif">GNews<font style="font-family: 'Didact Gothic',sans-serif"> api</font></p></a></li>
+        <li><a href="https://www.ufc.com/"><img src="../images/UFC.png" alt=""></a></li>
+        <li><a href="https://www.youtube.com/"><img src="../images/youTube.png" alt=""></a></li>
+        <li style="font-family: 'Didact Gothic',sans-serif">and our boy<a href="https://www.facebook.com/MojahedFudailat/"
+            style="font-family: 'Allerta Stencil',sans-serif">Mojahed</a>for the animees</li>
+    </ul>
+</div>
 
 
 <div class="container" >

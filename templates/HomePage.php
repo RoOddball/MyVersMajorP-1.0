@@ -15,8 +15,7 @@
     <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
     <style>
         body{
-            background-color: rgba(30,117,230,0.03);
-            font-family: 'Allerta Stencil',sans-serif
+            background-image: radial-gradient(white,rgba(145,214,186,.05),rgba(112,35,68,.2))
         }
         .navbar-default{
             background-color: rgba(30,120,100,0.5);

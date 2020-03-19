@@ -15,7 +15,7 @@
     <style>
         body{
             font-family: "Lato", sans-serif;
-            background-color: rgba(211,232,241,.1);
+            background-image: linear-gradient(rgba(221,213,105,.2),rgba(205,114,186,.07),rgba(112,35,68,.2))
         }
         h1{
             font-family:"Allerta Stencil",sans-serif ;

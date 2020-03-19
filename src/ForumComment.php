@@ -14,12 +14,12 @@ private $userName;
 private $content;
 private $dateAndTime;
 
-    public function getDateAndTme()
+    public function getDateAndTime()
     {
         return $this->dateAndTime;
     }
 
-    public function setDateAndTme($dateAndTime)
+    public function setDateAndTime($dateAndTime)
     {
         $this->dateAndTime = $dateAndTime;
     }

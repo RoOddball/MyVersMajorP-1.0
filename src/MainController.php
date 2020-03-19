@@ -107,7 +107,7 @@ class MainController
     public function Logout()
     {
 
-        include '../templates/LogoutScreen.php';
+        include '../templates/FirstScreen.php';
         $_SESSION = [];
     }
 
@@ -149,6 +149,28 @@ class MainController
 
             $stats = mysqli_fetch_all($this->databaseHandler->searchForEvent($query));
 
+
+            //move api start
+
+//            $i=0;
+//            $_SESSION['fighter']= [];
+//            foreach ($stats as $stat):
+//                $nameFighterOne=mysqli_fetch_all($this->databaseHandler->searchFighterStats($stat[2]))[0][0];
+//                $nameFighterTwo=mysqli_fetch_all($this->databaseHandler->searchFighterStats($stat[3]))[0][0];
+//                $nameFighterWin=mysqli_fetch_all($this->databaseHandler->searchFighterStats($stat[5]))[0][0];
+//                array_push($_SESSION['fighter'],[0 =>$stat[2],1 =>$stat[3]]);
+//
+//
+//                @$searchElement = explode(" ",$nameFighterOne)[1]."-".explode(" ",$nameFighterTwo)[1];
+//                $result = file_get_contents('https://gnews.io/api/v3/search?q='.$searchElement.'&token=d5f1a0058a3f693557a503d7f32a5da7');
+//
+//                $headlines = json_decode($result,true);
+//
+//                $i++;
+//            endforeach;
+            //move api end
+
+
             require_once __DIR__ . '/../templates/homeSearchResults.php';
         }
     }
@@ -176,6 +198,39 @@ class MainController
 
             $fighterRedStats = mysqli_fetch_all($this->databaseHandler->searchFighterStats(intval($query[0])))[0];
             $fighterBlueStats = mysqli_fetch_all($this->databaseHandler->searchFighterStats(intval($query[1])))[0];
+
+
+
+            //youtube api start
+
+            $keyword = $searchQuery;
+
+            //DENAS get an api key please dont use mine
+
+            $apikey = 'AIzaSyCzQYD7xhrEldov3qDtmOtZ5Fpwgh75NFg';
+            $googleApiUrl = 'https://www.googleapis.com/youtube/v3/search?part=snippet&q=' . $keyword . '&maxResults=' . 15 . '&key=' . $apikey;
+
+            $ch = curl_init();
+
+            curl_setopt($ch, CURLOPT_HEADER, 0);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+            curl_setopt($ch, CURLOPT_URL, $googleApiUrl);
+            curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+            curl_setopt($ch, CURLOPT_VERBOSE, 0);
+            curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+            $response = curl_exec($ch);
+
+            curl_close($ch);
+            $data = json_decode($response);
+            $value = json_decode(json_encode($data), true);
+
+            if($value){
+                $error = false;
+            }else{
+                $error =  true;
+            }
+            //youtube api end
+
 
             require_once __DIR__ . '/../templates/FightersCompare.php';
         }
@@ -210,7 +265,7 @@ class MainController
         $topic = filter_input(INPUT_POST, 'forumTopic');
 
         if($this->databaseHandler->searchTopicByTitle($topic)){
-            $errorMessage = 'the topic already exists';
+            //$errorMessage = 'the topic already exists';
             header("Location: http://localhost:8000/index.php?action=forumTopicDiscussion&topicTitle=$topic");
         }else {
             $forumTopic = new ForumTopic();
@@ -250,24 +305,26 @@ class MainController
             $topicId = intval($this->session->getTopicIdFromSession());
             $topicTitle = $this->session->getTopicTitleFromSession();
             $commentContent = filter_input(INPUT_POST, 'forumComment');
-            $dateAndTime = date("d.m.Y") . " at " . date("h.i") .":" ;
-            $commentQuery= mysqli_fetch_all($this->databaseHandler->searchForumComments($topicId));
+            $dateAndTime = date("d.m.Y") . " at " . date("h.i") . ":";
+            $commentQuery = mysqli_fetch_all($this->databaseHandler->searchForumComments($topicId));
 
-            if($commentQuery){
+            if ($commentQuery) {
                 $commentResults = $commentQuery;
-            }else
-                $commentResults =[0=>['','','no comments for this topic']];
+            } else
+                $commentResults = [0 => ['', '', 'no comments for this topic']];
 
-//            $comment = new ForumComment();
-//            $comment->setTopicId($topicId);
-//            $comment->setUserName($nickName);
-//            $comment->setContent($commentContent);
-//            $comment->setDateAndTime(date("d.m.Y" . "at" . date("h.i" . ":")))
-//
-//            $this->databaseHandler->insertObjectIntoTable($comment,'comment');
+            $mockComment = new ForumComment();
+            $mockComment->setTopicId($topicId);
+            $mockComment->setUserName($nickName);
+            $mockComment->setContent($commentContent);
+            $mockComment->setDateAndTime(date("d.m.Y") . " at " . date("h.i" . ":"));
 
-            $this->databaseHandler->storeComment($topicId,$nickName,$commentContent,$dateAndTime);
+            //$this->databaseHandler->insertObjectIntoTable($comment,'comment');
+
+            //$this->databaseHandler->storeComment($topicId, $nickName, $commentContent, $dateAndTime);
+            $this->databaseHandler->insertObjectIntoTable($mockComment, 'comment');
             header("Location: {$_SERVER['HTTP_REFERER']}");
+
 
         }
     }

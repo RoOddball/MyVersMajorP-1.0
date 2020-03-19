@@ -57,6 +57,10 @@
             transform: rotate(-135deg);
             -webkit-transform: rotate(-135deg);
         }
+        a:hover{
+            text-decoration: none;
+            color:wheat;
+        }
 
     </style>
 </head>
@@ -82,8 +86,8 @@
             <li style="width: 80%">
                 <div class="text" style="text-align: center; background-color: rgba(7,33,5,.05); min-height: 10%;
                 border-radius: 10px; ">
-                    <p style="text-align: left; font-size:80%;color: gray"><b><?=$commentResult[4]?></b></p>
-                    <p style="text-align: left; font-size: 120%"><?=$commentResult[3]?></p>
+                    <p style="text-align: left; font-size:80%;color: gray"><b>&nbsp &nbsp &nbsp <?=$commentResult[4]?></b></p>
+                    <p style="text-align: left; font-size: 120%">&nbsp<?=$commentResult[3]?></p>
                 </div>
             </li>
         </ul>
