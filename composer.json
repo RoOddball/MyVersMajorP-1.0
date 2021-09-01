@@ -1,6 +1,6 @@
 {
     "require": {
-        "codeception/codeception": "^2.5",
+        "codeception/codeception": "^3.1",
         "ext-mysqli": "*",
         "ext-curl": "*",
         "ext-json": "*",
